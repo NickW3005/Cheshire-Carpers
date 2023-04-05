@@ -1,4 +1,110 @@
-h1 {
+/* Main Body */
+
+body {
+  margin: 0;
+}
+
+/* Link */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Heading & Logo */
+
+.cc-logo {
+  float: left;
+  width: 90px;
+  height: 60px;
+}
+
+.cc-heading {
+  position: relative;
+  bottom: 3px;
+  right: 10px;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cc-logo {
+    display: none;
+  }
+
+  .cc-heading {
+    text-align: center;
+  }
+}
+
+/* Nav Bar */
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #3a3a3a;
+}
+
+.cc-nav-list {
+  position: relative;
+  bottom: 55px;
+  margin-right: 15px;
+}
+
+.cc-nav-list a {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 10px 0 10px;
+  float: right;
+  display: inline;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .cc-nav-list {
+    position: fixed;
+    top: 50px;
+    right: 215px;
+  }
+
+  li {
+    font-weight: 200;
+    color: #000;
+  }
+
+  li:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+}
+
+/* Hero Image & Clip Path */
+
+.hero-bg {
+  width: 100%;
+  height: 650px;
+  background-color: #3a3a3a;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 50%);
+}
+
+.hero-container {
+  position: relative;
+  top: 110px;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  background-color: rgba(233, 232, 243, 0.8);
+  border: 2px solid silver;
+  z-index: 10;
 }
